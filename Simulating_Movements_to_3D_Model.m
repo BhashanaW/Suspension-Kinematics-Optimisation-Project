@@ -9,6 +9,15 @@ ylabel ('Y - Vertical (mm)');
 zlabel ('Z - Longitudinal (mm)');
 view(3);
 
+% Optimized Front Mounts
+UCA_in_F = [255.4640, 424.3583, -167.9114]; 
+LCA_in_F = [132.5522, 138.8964, -204.7307];
+
+UCA_in_R = [250, 430, -150];
+LCA_in_R = [180, 140, -200]; 
+UCA_out  = [520, 450, -10];
+LCA_out  = [540, 150, 10];
+
 for i = 1:length(angle_sweep)
     tita = angle_sweep(i);
 
