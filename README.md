@@ -30,6 +30,26 @@ FILES
 ------------------------------------------------------------------------------------------------------------------------------------
 
 ## Phase 2 -
+Here, the suspension system is been evaluated where we simulated 50mm of vertical wheel travel. Also, we have made a target of -5.0 degrees of camper at full bump assuming the applied model is a high performance formula car.
 
+**KEY ACHIVEMENTS**
+--> Scorecard - Created a function that calculates the dynamic camber angle at each millimeter of travel. It outputs a penalty score based on the absolute deviation from an engineered target of -5.00 degrees of camber at full bump.
+
+FILES
+--> evaluate_suspension.m
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+## Phase 3 -
+
+By completely bypassing manual adjustments we use Generic Algorithm to do the adjustments for the car. To do this we have implemented the system to Upper and Lower Front Chassis mounts.
+
+**KEY ACHIVEMENTS**
+--> Algorithm Deployment - Used MATLAB's `ga` solver to evaluate thousands of geometric combinations.
+--> Physical Constraints - Defined strict boundary conditions (`lb` and `ub`) locking the optimization space to a 30mm limit around the baseline chassis mounts, ensuring physical packaging constraints are respected.
+--> Results - The algorithm successfully minimized the penalty score across 200 and more generations, shifting the lower control arm inboard and altering the kinematic curve to hit the exact -5.00 degree target without geometric singularities.
+
+FILES
+--> test_run_optimization.m
 
 
