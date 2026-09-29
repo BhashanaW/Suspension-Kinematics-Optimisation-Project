@@ -1,4 +1,4 @@
-% 3D Formula Suspension Coordinates [X, Y, Z] in mm
+% 3D Formula Suspension Coordinates [X, Y, Z]
 UCA_in_F = [250, 430, 150];
 UCA_in_R = [250, 430, -150];
 UCA_out  = [520, 450, -10];
